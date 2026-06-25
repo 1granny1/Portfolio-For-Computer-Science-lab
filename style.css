@@ -1,3 +1,17 @@
 body{
-    font-family: Arial;
+    background-color:white;
+    font-family:light-brown;
+    margin:30px;
+}
+
+h1{
+    color:darkblue;
+}
+
+h2{
+    color:gray;
+}
+
+p{
+    font-size:18px;
 }
