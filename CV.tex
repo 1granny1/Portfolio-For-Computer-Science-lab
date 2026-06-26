@@ -1,0 +1,151 @@
+
+\documentclass[a4paper,12pt]{article}
+
+
+\usepackage{url}
+\usepackage{parskip} 	
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+\usepackage{tabularx}
+
+
+\usepackage{enumitem}
+
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+
+\usepackage{fontawesome5}
+
+
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+
+\begin{document}
+
+
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Sayed Mohammad Kamran Abbas Haider} \\[7.5pt]
+\href{https://github.com/1granny1}{\raisebox{-0.05\height}\faGithub\ 1granny1} \ $|$ \ 
+ 
+\href{mailto:Sayed.Haider@gisma-student.com}{\raisebox{-0.05\height}\faEnvelope \ Sayed.Haider@gisma-student.com} \ $|$ \ 
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +49 1767 9217 569} \\
+\end{tabularx}
+
+
+\section{Summary}
+I am currently a Software Engineering student at the prestigious Gisma University of Applied Sciences. I also enjoy other things like wrestling and cooking and have wrestled in the heavyweight division in my school back in Riyadh, Saudi Arabia.
+
+\section{Work Experience}
+
+\begin{jobshort}{Free Lance Wrestler}{Jan 2021 - present}
+I started competing in wrestling a while back and won a few local tournaments and my price winning accumulated to about 22.000 Indian Rupees
+\end{jobshort}
+
+
+\begin{joblong}{Dad's Hostel - Assistant Chef}{feb 2019 - June 2019}
+\item Back in 2019 when my dad had started the cafeteria system in his hostel back in India he chose me as the guy to help the chef
+\item The work included preparing the spices and chopping and cutting veggies for the chef to start cooking and helping him out when he needs my help.
+\end{joblong}
+  
+
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Snake Game} & \hfill \href{https://some-link.com}{GITHUB} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{A fun take on the classic snake game using python}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{University Database System} & \hfill \href{https://some-link.com}{GITHUB} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Built a university database system using Sql}  \\
+\end{tabularx}
+
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	 
+Gimsa University of Applied Sciences 
+\hfill (2025 - present )\\
+
+New Middle East International School Riyadh
+\hfill (2022 - 2024) \\
+\end{tabularx}
+
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+
+Hindi
+\hfill (Native Speaker )\\
+
+English
+\hfill (IELTS 7.5) \\
+
+German
+\hfill (Self taught A2 Profiency) \\
+
+\end{tabularx}
+
+
+
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Computer Languages &  \normalsize{Python, HTML, CSS, GIT, Latex, SQL.}\\
+Soft Skills  &  \normalsize{Friendliness, Cooking, Wrestling, Time management, Equanimity}\\  
+\end{tabularx}
+
+\end{document}
